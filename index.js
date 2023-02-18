@@ -83,7 +83,7 @@ document.getElementById('ellipse').addEventListener('click', function(){
     const inputB = document.getElementById('ellipse-b')
     const inputValueB = inputB.value;
 
-    let pentagonArea = math.pi * parseInt(inputValueA) * parseInt(inputValueB) ;
+    let pentagonArea = 3.14159 * parseInt(inputValueA) * parseInt(inputValueB) ;
     
     displayData(name, pentagonArea)
 })
