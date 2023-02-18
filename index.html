@@ -23,18 +23,18 @@
     <section class="lg:px-10 flex flex-col md:flex-row lg:flex-row gap-4">
         <div class="math-equation mt-8 w-[60%] grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div class="card w-full  shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="/images/triangle.png" alt="Shoes" class="rounded-xl" />
+               <figure class="px-10 pt-10">
+                  <img src="/images/triangle.png" alt="" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Triangle</h2>
+                  <h2 id="triangle-name" class="card-title">Triangle</h2>
                   <p>Area (A) = 0.5 x b x h </p>
                     <div class="py-2">
-                        <input class="w-1/4 px-2 bg-stone-200 rounded-md" type="number" name="" id="" placeholder="b"><span class="px-1">cm</span>
-                        <input class="w-1/4 px-2 bg-stone-200 rounded-md" type="number" name="" id="" placeholder="h"><span class="px-1">cm</span>
+                        <input class="w-1/4 px-2 bg-stone-200 rounded-md" type="number" name="" id="t-base" placeholder="b"><span class="px-1">cm</span>
+                        <input class="w-1/4 px-2 bg-stone-200 rounded-md" type="number" name="" id="t-hight" placeholder="h"><span class="px-1">cm</span>
                     </div>
                   <div class="card-actions">
-                    <button class="px-10 rounded-md btn btn-primary text-white">Calculate</button>
+                    <button id="triangle" class="px-10 rounded-md btn btn-primary text-white">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -78,11 +78,11 @@
                   <h2 class="card-title">Rhombus</h2>
                   <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub> </p>
                     <div class="py-2">
-                        <input class="w-1/4 px-2 bg-stone-200 rounded-md" type="number" name="" id="" placeholder="d"><span class="px-1">cm</span>
-                        <input class="w-1/4 px-2 bg-stone-200 rounded-md" type="number" name="" id="" placeholder="d"><span class="px-1">cm</span>
+                        <input class="w-1/4 px-2 bg-stone-200 rounded-md" type="number" name="" id="r-diagonal1" placeholder="d"><span class="px-1">cm</span>
+                        <input class="w-1/4 px-2 bg-stone-200 rounded-md" type="number" name="" id="r-diagonal2" placeholder="d"><span class="px-1">cm</span>
                     </div>
                   <div class="card-actions">
-                    <button class="px-10 rounded-md btn btn-primary text-white">Calculate</button>
+                    <button id="rhombus" class="px-10 rounded-md btn btn-primary text-white">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -119,8 +119,23 @@
                 </div>
               </div>
         </div>
-        <div class="equation-details w-full md:w-[30%] lg:w-[30%] mx-auto border-4 border-gray-100 h-80 mt-12">
+        <div  class="equation-details w-full md:w-[30%] lg:w-[30%] mx-auto border-4 border-gray-100 h-80 mt-12">
             <h1 class="text-center underline underline-offset-4 text-lg font-bold mt-2">Area Calculation</h1>
+            <div class="overflow-x-auto">
+              <table class="table w-full">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th>NO</th>
+                    <th>Name</th>
+                    <th>Area</th>
+                  </tr>
+                </thead>
+                <tbody id="table-container" >
+
+                </tbody>
+              </table>
+            </div>
         </div>
     </section>
 </main>
