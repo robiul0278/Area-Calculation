@@ -15,7 +15,7 @@
           <a class="btn btn-ghost normal-case font-black text-3xl">Interactive</a>
         </div>
         <div class="navbar-end">
-            <a class="px-5 py-1 rounded-md font-semibold text-white bg-cyan-400">Blog</a>
+            <button onclick="blog()" class="px-5 py-1 rounded-md font-semibold text-white bg-cyan-400">Blog</button>
           </div>
       </div>
 </header>
@@ -140,5 +140,10 @@
     </section>
 </main>
     <script src="index.js"></script>
+    <script>
+      function blog() {
+        window.location.assign("blog.html")
+      }
+      </script>
 </body>
 </html> 
